@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Todo App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="app-title">✨Neth Task Master</h1>
+        
+        <div class="input-group">
+            <div class="input-row">
+                <input type="text" id="taskInput" class="input-field" placeholder="What needs to be done?">
+                <select id="categorySelect" class="input-field">
+                    <option value="personal">Personal</option>
+                    <option value="work">Work</option>
+                    <option value="shopping">Shopping</option>
+                </select>
+                <select id="prioritySelect" class="input-field">
+                    <option value="low">Low Priority</option>
+                    <option value="medium">Medium Priority</option>
+                    <option value="high">High Priority</option>
+                </select>
+            </div>
+            <input type="date" id="dueDateInput" class="input-field">
+            <button id="addButton" class="add-btn">
+                <i class="fas fa-plus"></i> Add Task
+            </button>
+        </div>
+
+        <div id="todoList" class="todo-list">
+            <!-- Tasks will be added here dynamically -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
